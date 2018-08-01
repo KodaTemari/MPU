@@ -1,0 +1,53 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>加速度＆ジャイロセンサー</title>
+<link rel="stylesheet" href="common/css/module.css">
+<script src="/socket.io/socket.io.js"></script>
+<script src="common/js/jquery.min.js"></script>
+<script src="common/js/view.js"></script>
+</head>
+<body class="accShow angleShow gyroShow">
+<main>
+  <section id="acc">
+    <h1><input type="checkbox" name="accShow" checked>ACC(加速度センサー)</h1>
+    <ul>
+      <li id="acc_x"></li>
+      <li id="acc_y"></li>
+      <li id="acc_z"></li>
+    </ul>
+  </section>
+  <section id="angle">
+    <h1><input type="checkbox" name="angleShow" checked>ACC Angle(角度)</h1>
+    <ul>
+      <li id="angle_x"></li>
+      <li id="angle_y"></li>
+      <li id="angle_z"></li>
+    </ul>
+  </section>
+  <section id="gyro">
+    <h1><input type="checkbox" name="gyroShow" checked>GYRO(ジャイロセンサー)</h1>
+    <ul>
+      <li id="gyro_x"></li>
+      <li id="gyro_y"></li>
+      <li id="gyro_z"></li>
+    </ul>
+  </section>
+  <section>
+    <div id="targetArea">
+      <span id="target_acc"></span>
+      <span id="target_angle"><img src="common/img/compass.png" alt=""></span>
+      <span id="target_gyro"><img src="common/img/gear.png" alt=""></span>
+    </div>
+  </section>
+</main>
+
+<script type="text/javascript">
+  $(function(){
+    "use strict";
+    MPU.VIEW().init();
+  });
+</script>
+</body>
+</html>

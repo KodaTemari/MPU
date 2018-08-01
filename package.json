@@ -1,0 +1,17 @@
+{
+  "name": "SmartGlass-OS",
+  "version": "1.0.0",
+  "main": "common.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "jsonfile": "^3.0.0",
+    "serialport": "^4.0.7"
+  },
+  "devDependencies": {},
+  "description": ""
+}

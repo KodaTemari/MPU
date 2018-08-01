@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #000;
+  color: #FFF;
+  font-family: 'メイリオ', sans-serif;
+  font-size: 1.6em;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+ul {
+  margin-top: 0;
+}
+
+#acc,#angle,#gyro {
+  opacity: 0.4;
+}
+
+.accShow #acc,.angleShow #angle,.gyroShow #gyro {
+  opacity: 1;
+}
+
+#angle {
+  color: #FF80AB;
+}
+
+#gyro {
+  color: #CCFF90;
+}
+
+#targetArea {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  margin-left: -200px;
+  width: 401px;
+  height: 401px;
+  background: url(../img/meter.png) no-repeat center center;
+}
+
+#target_acc, #target_angle,#target_gyro {
+  display: none;
+  position: absolute;
+  transition: all 0.3s;
+}
+
+.accShow #target_acc,.angleShow #target_angle,.gyroShow #target_gyro {
+  display: inline-block;
+}
+
+#target_acc {
+  top:  175px;
+  left:  175px;
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  background: #CCC;
+}
+
+#target_angle {
+  position: absolute;
+  top:  163px;
+  left:  163px;
+  width: 75px;
+  height: 75px;
+  opacity: 0.8;
+}
+
+#target_gyro {
+  position: absolute;
+  top:  150px;
+  left:  150px;
+  width: 101px;
+  height: 101px;
+  opacity: 0.5;
+}

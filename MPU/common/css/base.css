@@ -1,0 +1,283 @@
+@charset "utf-8";
+
+/* リセット と 基本設定
+================================================== */
+
+html, body, object, iframe, form,
+h1, h2, h3, h4, h5, h6, p,
+dl, dt, dd, ol, ul, li,
+table, caption, tr, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+#header img,
+#wrap img {
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+
+/* 区切り線 */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #CCC;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* リンク */
+a:link {
+  color: #11c;
+}
+
+a:visited {
+  color: #11c;
+}
+
+a:hover {
+  color: #11c;
+}
+
+a:active {
+  color: #11c;
+}
+
+
+/* 汎用スタイル
+================================================== */
+
+.fontSize5L {
+  font-size: 76px;
+  font-size: 7.6rem;
+}
+
+.fontSize4L {
+  font-size: 56px;
+  font-size: 5.6rem;
+}
+
+.fontSize3L {
+  font-size: 40px;
+  font-size: 4.0rem;
+}
+
+.fontSize2L {
+  font-size: 28px;
+  font-size: 2.8rem;
+}
+
+.fontSizeL {
+  font-size: 20px;
+  font-size: 2rem;
+}
+
+.fontSizeM {
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+.fontSizeS {
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+.fontSize2S {
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+
+.alignCenter {
+  text-align: center;
+}
+
+.alignLeft {
+  text-align: left;
+}
+
+.alignRight {
+  text-align: right;
+}
+
+.narrow {
+  letter-spacing: -1px;
+}
+
+.inlineBlock {
+  display: inline-block;
+}
+
+.table {
+  display: table;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.flexbox {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.relative {
+  position: relative;
+}
+
+.square {
+  list-style: square;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.url {
+  word-wrap: break-word;
+}
+
+.btn {
+  display: inline-block;
+  border: #EEE solid 1px;
+  border-bottom-color: #CCC;
+  background-color: #EEE;
+  color: #FFF;
+  text-align: center;
+  cursor: pointer;
+  /*border-radius: 2px;*/
+}
+
+.btn:hover {
+  /*background: #777;
+  border-bottom: #555 solid 1px;*/
+}
+
+.btn.border {
+  border: #CCC solid 2px;
+  background-color: #FFF;
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btn.border .arrow {
+  margin: 0 5px;
+}
+
+.btn.border .arrow:before {
+  top: 8px;
+
+}
+.btn.border .arrow:after {
+  top: 12px;
+}
+
+.icon {
+  display: inline-block;
+  margin-left: 3px;
+  padding: 0 2px;
+  background-color: #ff3ca0;
+  color: #FFF;
+  font-size: 10px;
+  font-size: 1.0rem;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 2px;
+}
+
+.icon.pdf {
+  border: #DDD solid 1px;
+  background-color: #FFF;
+  color: #f41f05;
+}
+
+.iconImg {
+  display: inline-block;
+  width: 22px;
+  margin-left: 5px;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+.arrow {
+  position: relative;
+  display: inline-block;
+  padding: 5px 20px 5px 0;
+  vertical-align: middle;
+}
+
+.arrow:before,
+.arrow:after {
+  position: absolute;
+  content: "";
+  vertical-align: middle;
+}
+
+.arrow:before {
+  top: 9px;
+  right: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #4fcceb;
+  font-size: 14px;
+}
+.arrow:after {
+  top: 13px;
+  right: 5px;
+  width: 4px;
+  height: 4px;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.kome {
+  margin-left: 1em;
+  text-indent: -1em;
+}
+
+.kome.sub {
+  font-size: 10px;
+  font-size: 1.0rem;
+}
+
+.radius {
+  border-radius: 6px;
+}
+
+
+/* 読み上げ
+================================================== */
+
+.hide {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
