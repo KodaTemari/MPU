@@ -1,7 +1,7 @@
 {
-  "name": "SmartGlass-OS",
-  "version": "1.0.0",
-  "main": "common.js",
+  "name": "Test",
+  "version": "0.0.1",
+  "main": "MPU.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
